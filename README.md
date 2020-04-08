@@ -1,88 +1,41 @@
-<p align="center">
-    <a href="https://sylius.com" target="_blank">
-        <img src="https://demo.sylius.com/assets/shop/img/logo.png" />
-    </a>
-</p>
+Installation
+============
 
-<h1 align="center">Plugin Skeleton</h1>
+Make sure Composer is installed globally, as explained in the
+[installation chapter](https://getcomposer.org/doc/00-intro.md)
+of the Composer documentation.
 
-<p align="center">Skeleton for starting Sylius plugins.</p>
+Applications that use Symfony Flex
+----------------------------------
 
-## Installation
+Open a command console, enter your project directory and execute:
 
-1. Run `composer create-project sylius/plugin-skeleton ProjectName`.
+```console
+$ composer require rodmarzavala/sylius-epay-visanet-payment-gateway
+```
 
-2. From the plugin skeleton root directory, run the following commands:
+Applications that don't use Symfony Flex
+----------------------------------------
 
-    ```bash
-    $ (cd tests/Application && yarn install)
-    $ (cd tests/Application && yarn build)
-    $ (cd tests/Application && bin/console assets:install public -e test)
-    
-    $ (cd tests/Application && bin/console doctrine:database:create -e test)
-    $ (cd tests/Application && bin/console doctrine:schema:create -e test)
-    ```
+### Step 1: Download the Bundle
 
-To be able to setup a plugin's database, remember to configure you database credentials in `tests/Application/.env` and `tests/Application/.env.test`.
+Open a command console, enter your project directory and execute the
+following command to download the latest stable version of this bundle:
 
-## Usage
+```console
+$ composer require rodmarzavala/sylius-epay-visanet-payment-gateway
+```
 
-### Running plugin tests
+### Step 2: Enable the Bundle
 
-  - PHPUnit
+Then, enable the bundle by adding it to the list of registered bundles
+in the `config/bundles.php` file of your project:
 
-    ```bash
-    $ vendor/bin/phpunit
-    ```
+```php
+// config/bundles.php
 
-  - PHPSpec
-
-    ```bash
-    $ vendor/bin/phpspec run
-    ```
-
-  - Behat (non-JS scenarios)
-
-    ```bash
-    $ vendor/bin/behat --tags="~@javascript"
-    ```
-
-  - Behat (JS scenarios)
- 
-    1. Download [Chromedriver](https://sites.google.com/a/chromium.org/chromedriver/)
-    
-    2. Download [Selenium Standalone Server](https://www.seleniumhq.org/download/).
-    
-    2. Run Selenium server with previously downloaded Chromedriver:
-    
-        ```bash
-        $ java -Dwebdriver.chrome.driver=chromedriver -jar selenium-server-standalone.jar
-        ```
-        
-    3. Run test application's webserver on `localhost:8080`:
-    
-        ```bash
-        $ (cd tests/Application && bin/console server:run localhost:8080 -d public -e test)
-        ```
-    
-    4. Run Behat:
-    
-        ```bash
-        $ vendor/bin/behat --tags="@javascript"
-        ```
-
-### Opening Sylius with your plugin
-
-- Using `test` environment:
-
-    ```bash
-    $ (cd tests/Application && bin/console sylius:fixtures:load -e test)
-    $ (cd tests/Application && bin/console server:run -d public -e test)
-    ```
-    
-- Using `dev` environment:
-
-    ```bash
-    $ (cd tests/Application && bin/console sylius:fixtures:load -e dev)
-    $ (cd tests/Application && bin/console server:run -d public -e dev)
-    ```
+return [
+    // ...
+    <vendor>\<bundle-name>\<bundle-long-name>::class => ['all' => true],
+];
+```
