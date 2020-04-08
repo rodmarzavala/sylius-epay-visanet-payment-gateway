@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace RodmarZavala\SyliusEpayVisanetPaymentGatewayPlugin\Payum\Action;
+namespace RLabs\SyliusEpayVisanetPaymentGateway\Payum\Action;
 
 use Payum\Core\Action\ActionInterface;
 use Payum\Core\Request\GetStatusInterface;

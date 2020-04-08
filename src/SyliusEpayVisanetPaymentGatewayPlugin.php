@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace RodmarZavala\SyliusEpayVisanetPaymentGatewayPlugin;
+namespace RLabs\SyliusEpayVisanetPaymentGateway;
 
 use Sylius\Bundle\CoreBundle\Application\SyliusPluginTrait;
 use Symfony\Component\HttpKernel\Bundle\Bundle;

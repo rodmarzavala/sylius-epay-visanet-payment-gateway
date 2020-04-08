@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace RodmarZavala\SyliusEpayVisanetPaymentGatewayPlugin\Payum;
+namespace RLabs\SyliusEpayVisanetPaymentGateway\Payum;
 
 final class SyliusApi
 {

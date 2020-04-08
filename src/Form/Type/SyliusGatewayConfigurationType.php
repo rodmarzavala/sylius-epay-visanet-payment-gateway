@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace RodmarZavala\SyliusEpayVisanetPaymentGatewayPlugin\Form\Type;
+namespace RLabs\SyliusEpayVisanetPaymentGateway\Form\Type;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;

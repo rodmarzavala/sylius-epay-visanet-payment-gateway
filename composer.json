@@ -37,8 +37,8 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "Acme\\SyliusExamplePlugin\\": "src/",
-            "Tests\\Acme\\SyliusExamplePlugin\\": "tests/"
+            "RLabs\\SyliusEpayVisanetPaymentGateway\\": "src/",
+            "Tests\\RLabs\\SyliusEpayVisanetPaymentGateway\\": "tests/"
         }
     },
     "autoload-dev": {

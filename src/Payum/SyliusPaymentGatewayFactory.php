@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace RodmarZavala\SyliusEpayVisanetPaymentGatewayPlugin\Payum;
+namespace RLabs\SyliusEpayVisanetPaymentGateway\Payum;
 
 use Payum\Core\GatewayFactory;
 use Payum\Core\Bridge\Spl\ArrayObject;
-use RodmarZavala\SyliusEpayVisanetPaymentGatewayPlugin\Payum\Action\StatusAction;
+use RLabs\SyliusEpayVisanetPaymentGateway\Payum\Action\StatusAction;
 
 final class SyliusPaymentGatewayFactory extends GatewayFactory
 {

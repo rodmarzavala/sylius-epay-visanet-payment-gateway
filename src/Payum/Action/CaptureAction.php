@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace RodmarZavala\SyliusEpayVisanetPaymentGatewayPlugin\Payum\Action;
+namespace RLabs\SyliusEpayVisanetPaymentGateway\Payum\Action;
 
-use RodmarZavala\SyliusEpayVisanetPaymentGatewayPlugin\Payum\SyliusApi;
+use RLabs\SyliusEpayVisanetPaymentGateway\Payum\SyliusApi;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
 use Payum\Core\Action\ActionInterface;
