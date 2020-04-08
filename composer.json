@@ -1,8 +1,8 @@
 {
-    "name": "sylius/plugin-skeleton",
+    "name": "rodmarzavala/sylius-epay-visanet-payment-gateway",
     "type": "sylius-plugin",
-    "keywords": ["sylius", "sylius-plugin"],
-    "description": "Acme example plugin for Sylius.",
+    "keywords": ["Visa", "Epay", "Gateway"],
+    "description": "Sylius Plugin: Epay visanet payment gateway implementation",
     "license": "MIT",
     "require": {
         "php": "^7.2",
